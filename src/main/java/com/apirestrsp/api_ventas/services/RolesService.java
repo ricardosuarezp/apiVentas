@@ -17,5 +17,8 @@ public class RolesService {
     public Roles guardaRoles(Roles roles){
         return rolesRepository.save(roles);
     }
+    public Roles buscarRolesPorId(Integer id){
+    return rolesRepository.findById(id).orElseThrow(() -> new RuntimeException("Rol no encontrado"));
+}
 
 }
