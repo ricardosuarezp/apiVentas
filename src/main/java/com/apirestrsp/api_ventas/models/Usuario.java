@@ -31,7 +31,7 @@ public class Usuario {
     private String password;
 
     @Column(length=100)
-    private String estado;
+    private String estado = "Activo";
 
     private LocalDateTime fechaCreacion;
 
